@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Bixtory — 먹으로 쌓이는 시간</title>
+  <meta name="description" content="수묵화와 실제 붓글씨 서체로 구성한 Bixtory 디자인 시안.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f5f2e9'/%3E%3Ctext x='13' y='47' font-family='serif' font-size='49' fill='%2322251e'%3Eb%3C/text%3E%3Ccircle cx='53' cy='47' r='4' fill='%23a34532'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/eastseadokdo/EastSeaDokdo-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/yeonsung/YeonSung-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body id="top">
+  <svg class="svg-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="ink-edge" x="-10%" y="-20%" width="120%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency=".09 .5" numOctaves="3" seed="12" result="grain"/>
+        <feDisplacementMap in="SourceGraphic" in2="grain" scale="3"/>
+      </filter>
+      <symbol id="icon-arrow" viewBox="0 0 32 32"><path d="M2 17 25 15 20 9 31 15 20 23 24 18 2 19Z" fill="currentColor"/></symbol>
+      <symbol id="icon-pause" viewBox="0 0 32 32"><path d="M9 5 13 3 12 28 8 26ZM21 4 25 5 24 27 20 29Z" fill="currentColor"/></symbol>
+      <symbol id="icon-play" viewBox="0 0 32 32"><path d="M9 3 28 16 8 29 10 17Z" fill="currentColor"/></symbol>
+      <symbol id="icon-reset" viewBox="0 0 32 32"><path d="M25 12A11 11 0 1 0 26 23" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M19 2 30 10 18 15 22 10Z" fill="currentColor"/></symbol>
+      <symbol id="icon-menu" viewBox="0 0 32 32"><path d="M3 9 29 7 28 11 4 12ZM4 22 28 20 30 24 3 25Z" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="site-header">
+    <a href="#top" class="wordmark" aria-label="Bixtory 처음으로">bixtory<span>.</span></a>
+    <nav id="navigation" aria-label="주요 메뉴">
+      <a href="#philosophy">우리의 생각</a>
+      <a href="#principles">선택의 기준</a>
+      <a href="#promise">지키는 약속</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navigation"><svg class="icon"><use href="#icon-menu"/></svg></button>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-art" src="assets/ink-landscape.png" alt="" fetchpriority="high">
+      <div class="hero-content wrap">
+        <p class="eyebrow">BIG + STORY</p>
+        <h1 id="hero-title"><span>시간이 쌓이는</span><span>기술<span class="title-dot">.</span></span></h1>
+        <p class="hero-description">디지털 위에 사람의 일상이 자연스럽게 쌓여,<br class="desktop-break"> 시간이 지나서 의미가 커지는 브랜드.</p>
+        <a class="ink-button" href="#experience"><svg class="button-art" viewBox="0 0 270 66" preserveAspectRatio="none" aria-hidden="true"><path filter="url(#ink-edge)" d="M10 6 53 2 98 5 155 3 211 6 256 4 262 14 269 26 261 38 264 52 241 60 188 62 137 60 81 64 34 60 5 56 9 43 1 31 7 20Z"/></svg><span>직접 느껴보기</span><svg class="icon"><use href="#icon-arrow"/></svg></a>
+        <div class="hero-caption"><span class="index-mark">01 <i></i> 04</span><span class="micro">SMALL MOMENTS. BIG STORY.</span></div>
+      </div>
+      <span class="vertical-note" aria-hidden="true">고요하게 쌓이는 시간</span>
+      <div class="seal" aria-hidden="true">기<br>록</div>
+    </section>
+
+    <section id="philosophy" class="philosophy wrap" aria-labelledby="philosophy-title">
+      <div class="philosophy-copy">
+        <p class="section-label"><span>01</span> OUR PHILOSOPHY</p>
+        <h2 id="philosophy-title">매일의 선택이,<br>나라는 이야기로.</h2>
+        <p>사람은 스토리를 쓰지 않습니다.<br>매일 선택하며 살아갑니다.</p>
+        <p class="quiet-copy">의식하지 않아도 쌓이는 역사.<br>그것이 Bixtory입니다.</p>
+        <a class="brush-link" href="#principles">우리의 기준을 읽다 <svg class="icon"><use href="#icon-arrow"/></svg></a>
+      </div>
+      <div class="philosophy-art" aria-hidden="true"><img src="assets/ink-landscape.png" alt="" loading="lazy"><span>여백</span></div>
+    </section>
+
+    <section id="experience" class="experience" aria-labelledby="experience-title">
+      <div class="wrap experience-top">
+        <div><p class="section-label"><span>02</span> FEEL THE IDEA</p><h2 id="experience-title">흔적은,<br>자연스럽게.</h2></div>
+        <div class="experience-copy"><p>기록하려 애쓰지 않아도 괜찮아요.<br>움직임이 쌓여, 하나의 장면이 됩니다.</p>
+          <div class="experience-controls">
+            <button id="pause-button" class="ink-control" type="button" aria-pressed="false"><svg class="icon"><use href="#icon-pause"/></svg><span>움직임 멈추기</span></button>
+            <button id="clear-button" class="ink-control" type="button"><svg class="icon"><use href="#icon-reset"/></svg><span>장면 비우기</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="wrap ink-stage">
+        <canvas id="ink-canvas" tabindex="0" aria-label="먹의 흔적 체험. 마우스나 터치로 움직이거나 방향키와 Enter를 사용하세요."></canvas>
+        <p class="canvas-invitation">당신의 움직임을 남겨보세요.</p>
+        <div class="stage-caption"><span>YOUR EVERYDAY, LAYER BY LAYER.</span><span aria-hidden="true">무한</span></div>
+      </div>
+      <div class="wrap experience-bottom"><span>마우스·터치로 흔적을 남겨보세요. 키보드는 체험 영역에서 방향키·Enter.</span><span id="experience-status" role="status" aria-live="polite">움직임을 기다립니다.</span></div>
+    </section>
+
+    <section id="principles" class="principles wrap" aria-labelledby="principles-title">
+      <div class="principles-heading"><div><p class="section-label"><span>03</span> OUR PRINCIPLES</p><h2 id="principles-title">오래 남을 것을<br>선택합니다.</h2></div><p>지금 좋아 보이는 것보다,<br>시간이 지난 뒤 더 의미가 커지는 것.</p></div>
+      <div class="principle-list">
+        <article><span class="principle-number">하나</span><h3>자연스러움</h3><p>일상 속에서 자연스럽게 사용하는가?</p></article>
+        <article><span class="principle-number">둘</span><h3>시간의 가치</h3><p>지금 좋아 보이는 것보다, 시간이 지난 뒤 더 의미가 커지는 것.</p></article>
+        <article><span class="principle-number">셋</span><h3>비개입</h3><p>사람의 맥락과 시간을 훼손하지 않습니다.</p></article>
+        <article><span class="principle-number">넷</span><h3>서사 대신 장면</h3><p>만들어진 세계관이 아닌, 사용자의 경험.</p></article>
+      </div>
+    </section>
+
+    <section id="promise" class="promise wrap" aria-labelledby="promise-title"><p class="section-label"><span>04</span> BUILT ON TRUST</p><div class="promise-grid"><h2 id="promise-title">기술은 투명하게.<br>경험은 조용하게.</h2><ul><li>우리는 사용자를 감시하지 않습니다.</li><li>데이터는 사용자의 시간에 속합니다.</li><li>수집은 최소화하고, 보관과 해석의 책임을 집니다.</li></ul></div></section>
+
+    <section class="manifesto wrap" aria-labelledby="manifesto-title"><p class="section-label">THE BIXTORY MANIFESTO</p><h2 id="manifesto-title">커지지 않아도 됩니다.<br>대신, <span>오래 남아야 합니다.</span></h2><a href="#top" class="back-top" aria-label="맨 위로"><svg class="icon"><use href="#icon-arrow"/></svg></a></section>
+  </main>
+  <footer class="site-footer wrap"><a class="wordmark" href="#top">bixtory<span>.</span></a><span class="micro">SMALL MOMENTS. BIG STORY.</span><p>수묵 웹 디자인 시안 · Bixtory</p></footer>
+</body>
+</html>

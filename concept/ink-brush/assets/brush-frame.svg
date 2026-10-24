@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 310" preserveAspectRatio="none">
+  <defs><filter id="dry" x="-1%" y="-3%" width="102%" height="106%"><feTurbulence type="fractalNoise" baseFrequency=".06 .21" numOctaves="2" seed="11" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2"/></filter></defs>
+  <g fill="black" filter="url(#dry)">
+    <path d="M4 8Q237 2 491 5T995 6L985 9Q730 8 492 8T4 8Z"/>
+    <path d="M7 4Q11 142 6 303L4 291Q7 133 7 4ZM995 5Q991 149 994 304L992 289Q989 155 995 5Z"/>
+    <path d="M5 303Q254 307 497 304T995 303L982 306Q735 308 496 307T5 303Z"/>
+  </g>
+</svg>
